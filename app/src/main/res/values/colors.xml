@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#0B3870</color>
+    <color name="colorAccent">#8A021543</color>
+    ///////////////////////////////////////////
+    <color name="corPrimaria">#0B3870</color>
+    <color name="corSecundaria">#345FCC</color>
+    ///////////////////////////////////////////
+    <color name="corFundoLogin">#14293A</color>
+    <color name="corFundo">#8A021543</color>
+    <color name="corTexto">#f2faff</color>
+    <color name="fundo_edit_text">#203c52</color>
+</resources>
