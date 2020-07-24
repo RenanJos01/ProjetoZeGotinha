@@ -33,23 +33,30 @@ public class Login_Activity extends AppCompatActivity {
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Voce clicou em entrar", Toast.LENGTH_SHORT).show();
                 //convertendo oq será escrito no EditText em número INT
                 //aux = editData.getText().toString();
                 //ano = Integer.parseInt(aux);
-                //idade = idoso(ano);
+                //idade = saberIdade(ano);
                 //ou
-                idade = saberIdade(Integer.parseInt(editData.getText().toString()));
+                ano = Integer.parseInt(editData.getText().toString());
+                idade = saberIdade(ano);
 
-                if (idade >= 60) {
-                    Toast.makeText(getApplicationContext(), "Voce é uma pessoa que está na Idade de Risco", Toast.LENGTH_SHORT).show();
-                    limparCampos();
-                    //startActivity(new Intent(getApplicationContext(),MenuPrincipal.class));
-                    //finish();
-                } else {
-                    limparCampos();
-                    //startActivity(new Intent(getApplicationContext(),MenuPrincipal.class));
-                    //finish();
+                if(ano >=1900) {
+                    if (idade >= 60) {
+                        Toast.makeText(getApplicationContext(), "Voce é uma pessoa que está na Idade de Risco", Toast.LENGTH_SHORT).show();
+                        limparCampos();
+                        //startActivity(new Intent(getApplicationContext(),MenuPrincipal.class));
+                        //finish();
+                    } else if (idade >= 0) {
+                        limparCampos();
+                        startActivity(new Intent(getApplicationContext(), Onde_Vacinar_Activity.class));
+                        //finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Ano inválido (max:2020)", Toast.LENGTH_SHORT).show();
+                        limparCampos();
+                    }
+                }else{
+                    Toast.makeText(getApplicationContext(), "Ano inválido (min:1900)", Toast.LENGTH_SHORT).show();
                 }
             }
         });

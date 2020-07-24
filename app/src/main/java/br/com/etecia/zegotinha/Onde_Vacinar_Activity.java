@@ -5,16 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Gripe_ou_resfriado_Activity extends AppCompatActivity {
+public class Onde_Vacinar_Activity extends AppCompatActivity {
+
     ImageButton btnVoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gripe_ou_resfriado_layout);
+        setContentView(R.layout.onde__vacinar_layout);
 
         btnVoltar = findViewById(R.id.btnVoltar);
 

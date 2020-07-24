@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Gripe_ou_resfriado_Activity"></activity>
+        <activity android:name=".Onde_Vacinar_Activity"></activity>
+        <activity android:name=".Sintomas_Activity" />
+        <activity android:name=".Gripe_ou_resfriado_Activity" />
         <activity android:name=".MenuPrincipal_Activity" />
         <activity android:name=".Login_Activity" />
         <activity android:name=".Splash_Activity">
