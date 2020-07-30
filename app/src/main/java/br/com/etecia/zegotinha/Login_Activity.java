@@ -43,10 +43,9 @@ public class Login_Activity extends AppCompatActivity {
 
                 if(ano >=1900) {
                     if (idade >= 60) {
-                        Toast.makeText(getApplicationContext(), "Voce é uma pessoa que está na Idade de Risco", Toast.LENGTH_SHORT).show();
                         limparCampos();
-                        //startActivity(new Intent(getApplicationContext(),MenuPrincipal.class));
-                        //finish();
+                        startActivity(new Intent(getApplicationContext(),Idoso_Activity.class));
+                        finish();
                     } else if (idade >= 0) {
                         limparCampos();
                         startActivity(new Intent(getApplicationContext(), Onde_Vacinar_Activity.class));
